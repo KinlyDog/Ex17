@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f770041-70e4-46c6-a657-2e0ae13e3d84" name="Changes" comment="Complete project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5f770041-70e4-46c6-a657-2e0ae13e3d84" name="Changes" comment="Update project with recommendation">
       <change beforePath="$PROJECT_DIR$/src/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Level1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661350304612</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update project with recommendation">
+      <created>1661352560363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661352560363</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,6 +101,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
     <MESSAGE value="Complete project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete project" />
+    <MESSAGE value="Update project with recommendation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project with recommendation" />
   </component>
 </project>

@@ -34,10 +34,10 @@ public class Level1 {
                 for (int j = 0; j < w; j++) {
                     boolean t = treeNum[i][j] > 2;
 
-                    if (t & i > 0)     cut[i - 1][j] = 1;
-                    if (t & j > 0)     cut[i][j - 1] = 1;
-                    if (t & j < w - 1) cut[i][j + 1] = 1;
-                    if (t & i < h - 1) cut[i + 1][j] = 1;
+                    if (t && i > 0)     cut[i - 1][j] = 1;
+                    if (t && j > 0)     cut[i][j - 1] = 1;
+                    if (t && j < w - 1) cut[i][j + 1] = 1;
+                    if (t && i < h - 1) cut[i + 1][j] = 1;
                 }
             }
 
