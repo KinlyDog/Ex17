@@ -73,9 +73,4 @@ public class Level1 {
 
         return str;
     }
-
-    public static void main(String[] args) {
-        String[] str = {".+..", "..+.", ".+.."};
-        TreeOfLife(3, 4, 4, str);
-    }
 }
