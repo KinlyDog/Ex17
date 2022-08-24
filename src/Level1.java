@@ -32,14 +32,12 @@ public class Level1 {
             // create a cut map
             for (int i = 0; i < h; i ++) {
                 for (int j = 0; j < w; j++) {
-                    if (treeNum[i][j] > 2) {
-                        cut[i][j] = 1;
+                    boolean t = treeNum[i][j] > 2;
 
-                        if (i > 0) cut[i - 1][j] = 1;
-                        if (j > 0) cut[i][j - 1] = 1;
-                        if (j < w - 1) cut[i][j + 1] = 1;
-                        if (i < h - 1) cut[i + 1][j] = 1;
-                    }
+                    if (t & i > 0)     cut[i - 1][j] = 1;
+                    if (t & j > 0)     cut[i][j - 1] = 1;
+                    if (t & j < w - 1) cut[i][j + 1] = 1;
+                    if (t & i < h - 1) cut[i + 1][j] = 1;
                 }
             }
 
