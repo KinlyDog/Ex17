@@ -13,7 +13,7 @@ public class Level1 {
             }
         }
 
-        int[][] cut = new int[h][w];
+        int[][] cutTreeBranches = new int[h][w];
         int k = 0;
 
         while (k < n) {
@@ -34,18 +34,18 @@ public class Level1 {
                 for (int j = 0; j < w; j++) {
                     boolean t = treeNum[i][j] > 2;
 
-                    if (t && i > 0)     cut[i - 1][j] = 1;
-                    if (t && j > 0)     cut[i][j - 1] = 1;
-                    if (t && j < w - 1) cut[i][j + 1] = 1;
-                    if (t && i < h - 1) cut[i + 1][j] = 1;
+                    if (t && i > 0)     cutTreeBranches[i - 1][j] = 1;
+                    if (t && j > 0)     cutTreeBranches[i][j - 1] = 1;
+                    if (t && j < w - 1) cutTreeBranches[i][j + 1] = 1;
+                    if (t && i < h - 1) cutTreeBranches[i + 1][j] = 1;
                 }
             }
 
             // cut branches
             for (int i = 0; i < h; i ++) {
                 for (int j = 0; j < w; j++) {
-                    if (cut[i][j] != 0) {
-                        cut[i][j] = 0;
+                    if (cutTreeBranches[i][j] != 0) {
+                        cutTreeBranches[i][j] = 0;
                         treeNum[i][j] = 0;
                     }
                 }
