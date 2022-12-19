@@ -14,9 +14,9 @@ public class Level1 {
         }
 
         int[][] cutTreeBranches = new int[h][w];
-        int k = 0;
+        int count = 0;
 
-        while (k < n) {
+        while (count < n) {
             // branch growth
             for (int i = 0; i < h; i ++) {
                 for (int j = 0; j < w; j++) {
@@ -24,8 +24,8 @@ public class Level1 {
                 }
             }
 
-            if (k % 2 == 0) {
-                k++;
+            if (count % 2 == 0) {
+                count++;
                 continue;
             }
 
@@ -51,8 +51,9 @@ public class Level1 {
                 }
             }
 
-            k++;
+            count++;
         }
+        count = 0;
 
         String[] str = new String[h];
 
