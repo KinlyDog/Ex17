@@ -53,7 +53,6 @@ public class Level1 {
 
             count++;
         }
-        count = 0;
 
         String[] str = new String[h];
 
